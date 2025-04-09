@@ -36,7 +36,7 @@ export default function LoginSignupBox(){
         alert("Registration Successful!");
         setAction('Login');
       } else {
-        alert(data.message || "Registration failed.");
+        alert(data.error || "Registration failed.");
       }
     } catch (error) {
       console.error("Error during registration: ", error.message);
